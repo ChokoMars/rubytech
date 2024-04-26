@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import { useInView } from "react-intersection-observer";
 import { UserCard, UsersList } from "./components";
 import { useFetchUsers } from "./hooks/useFetchUsers.hook";
-import { useInView } from "react-intersection-observer";
+
+import "./App.css";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -13,8 +14,6 @@ function App() {
   const { ref, inView } = useInView({
     threshold: 0.1,
   });
-
-  console.log(inView);
 
   useEffect(() => {
     if (inView) {
