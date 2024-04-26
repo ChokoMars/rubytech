@@ -1,0 +1,32 @@
+.userList {
+  width: 67vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.usersHeader {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+}
+
+.usersHeaderItem {
+  font-weight: bold;
+  flex: 1;
+  color: #42aaff;
+}
+
+.lastElem {
+  height: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .userList {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+  }
+}

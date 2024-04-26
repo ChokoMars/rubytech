@@ -1,0 +1,14 @@
+.user {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5px;
+}
+
+.userElem {
+  flex: 1;
+}
+
+.user:hover {
+  border-bottom: 1px solid gray;
+}
