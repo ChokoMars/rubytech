@@ -39,6 +39,7 @@ function App() {
             currentRef={ref}
           />
           <UserCard curUser={curUser} />
+          <div> Изменения для переноса </div>
         </>
       )}
     </div>
